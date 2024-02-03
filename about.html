@@ -5,46 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT</title>
     <style>
-    * {
-    margin: 0;
-    padding: 0;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.main {
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(lili-kovac-JonGFaeFPgg-unsplash.jpg);
-    background-position: center;
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main {
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(lili-kovac-JonGFaeFPgg-unsplash.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Set the alpha channel for transparency */
+        }
+
+        .menu {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            overflow: hidden; /* Hide the overflow content */
+            white-space: nowrap; /* Prevent line breaks */
+            border-right: 2px solid #fff; /* Border for typing effect */
+            animation: typing 5s steps(30) forwards; /* Typing animation */
+            position:relative;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 51%;
+            }
+        }
+       
+        .menu h2 {
+            font-size: 3em; /* Increase the font size */
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        .about-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.3); /* Set the alpha channel for transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            position: relative;
+            color: #fff;
+        }
+
+        .about-content p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .about-content a {
+            color: #f7b731;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-content a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url(myprofile\ pic.jpg);
     background-size: cover;
-    height: 100vh;
-}
-
-.menu {
-    width: 100%; 
-    text-align: center; 
-    padding-top: 20px;
-}
-
-.menu h2 {
-    font-size: 60px; /* Increase the font size */
-    font-family: 'garamond', serif;
-    color: rgb(248, 246, 246);
+    background-position: center top; /* Adjust the positioning */
+    margin: 0 auto 20px;
+    border: 2px solid #fff;
 }
 
 
-
-.image-container {
-    background-size: cover;
-    background-position: center;
-    color: rgb(248, 246, 246);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* You can set the height as per your requirement */
-    text-align: right;
-    font-size: 24px;
-    font-family: 'lucida handwriting', cursive;
-    right: 0; /* Adjusted the right property */
-}
+        .image-container {
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: right;
+            font-size: 24px;
+            font-family: 'lucida handwriting', cursive;
+            right: 0;
+        }
     </style>
     <script>
         function receiveMessage(message) {
@@ -53,13 +122,16 @@
     </script>
 </head>
 <body>
-    
     <div class="main">
-        
         <div class="menu">
-        <h2>ABOUT</h2>
-    </div>
-    
+            
+            <h2>ABOUT</h2>
+        </div>
+        <div class="about-content">
+            <div class="profile-photo"></div>
+            <div class="name">I'am Kushal G Pavar</div>
+            <p>As an aspiring engineer deeply passionate about technology, web development, startups, and the stock market, I am currently pursuing my degree with a focus on honing skills such as proficiency in languages like HTML, CSS, C, C++ and python. My portfolio proudly showcases hands-on projects where I've tackled challenges head-on, integrating innovative solutions. With a keen interest in startups, I've actively participated in entrepreneurial initiatives, highlighting my adaptability and creativity. Additionally, my exploration into the dynamics of the stock market, reflected in coursework and personal projects, demonstrates a multifaceted approach to my academic journey. Excited to contribute my skills and enthusiasm, I invite you to explore my portfolio and delve into a comprehensive view of my academic and technical endeavors.</p>
+        </div>
     </div>
 </body>
 </html>

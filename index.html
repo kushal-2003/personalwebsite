@@ -108,12 +108,31 @@ ul li a:hover {
         transform: translateY(0%);
     }
 }
+.copyright {
+        text-align: center;
+        padding: 10px;
+        background-color: #1d1b1a; /* Background color for the copyright section */
+        color: #fff; /* Text color for the copyright section */
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0; /* Background color for the body */
+    }
 </style>
 <script>
+    {
+    NOTE('This website designed only for desktop view(responsive development is in progress)')
+       function NOTE(message) {
+        alert('NOTE: ' + message);}}
+
     let openedWindow;
 
     function openNewWindow(url) {
         openedWindow = window.open(url, '_blank');
+    }
+    Warning ('Misuse of documents,photos and contact info leads to strict legal action ')
+    function Warning (message) {
+    alert('Warning: ' +message);
     }
 </script>
 <body>
@@ -138,6 +157,9 @@ ul li a:hover {
                  but their own mindset can."</p>
                  <p>- Sir Ratan Tata</p>
             </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 personalwebsite(Kushal g pavar). All rights reserved.
         </div>
     </div>
 </body>
